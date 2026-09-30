@@ -1,0 +1,585 @@
+# vsim -c -coverage tb_top_opt -l logs/alu_test.log "+UVM_TESTNAME=alu_test" 
+# Start time: 10:08:06 on Sep 30,2026
+# Loading sv_std.std
+# Loading work.alu_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.alu_tb_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading work.alu_if(fast__2)
+# Loading work.alu(fast)
+# Loading D:/programs/questasim download/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test alu_test...
+# UVM_INFO alu_env.sv(23) @ 0: uvm_test_top.envh [alu_env] ALU Environment build phase
+# UVM_INFO alu_scoreboard.sv(25) @ 0: uvm_test_top.envh.scbh [alu_scoreboard] alu scoreboard build phase
+# UVM_INFO alu_sequence.sv(15) @ 0: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] starting the uvm sequence
+# UVM_INFO alu_driver.sv(31) @ 5000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 9, b = 7, op = 1
+# UVM_INFO alu_sequence.sv(23) @ 15000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=9, b=7, op=1, result=x
+# UVM_INFO alu_driver.sv(31) @ 25000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 3, b = 3, op = 1
+# UVM_INFO alu_monitor.sv(49) @ 35000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 9, b = 7, op = 1, result = 0
+# UVM_ERROR alu_scoreboard.sv(50) @ 35000: uvm_test_top.envh.scbh [alu_scoreboard] Mismatch a=9 b=7 op=1 => result=0 expected=2
+# UVM_INFO alu_sequence.sv(23) @ 35000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=3, b=3, op=1, result=x
+# UVM_INFO alu_driver.sv(31) @ 45000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 5, b = 12, op = 0
+# UVM_INFO alu_monitor.sv(49) @ 45000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 3, b = 3, op = 1, result = 0
+# UVM_INFO alu_scoreboard.sv(56) @ 45000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=3 b=3 op=1 => result=0
+# UVM_INFO alu_monitor.sv(49) @ 55000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 3, b = 3, op = 1, result = 0
+# UVM_INFO alu_scoreboard.sv(56) @ 55000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=3 b=3 op=1 => result=0
+# UVM_INFO alu_sequence.sv(23) @ 55000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=5, b=12, op=0, result=x
+# UVM_INFO alu_driver.sv(31) @ 65000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 1, b = 14, op = 3
+# UVM_INFO alu_monitor.sv(49) @ 65000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 5, b = 12, op = 0, result = 1
+# UVM_INFO alu_scoreboard.sv(56) @ 65000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=5 b=12 op=0 => result=1
+# UVM_INFO alu_monitor.sv(49) @ 75000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 5, b = 12, op = 0, result = 1
+# UVM_INFO alu_scoreboard.sv(56) @ 75000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=5 b=12 op=0 => result=1
+# UVM_INFO alu_sequence.sv(23) @ 75000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=1, b=14, op=3, result=x
+# UVM_INFO alu_driver.sv(31) @ 85000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 8, b = 5, op = 3
+# UVM_INFO alu_monitor.sv(49) @ 85000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 1, b = 14, op = 3, result = 15
+# UVM_INFO alu_scoreboard.sv(56) @ 85000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=1 b=14 op=3 => result=15
+# UVM_INFO alu_monitor.sv(49) @ 95000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 1, b = 14, op = 3, result = 15
+# UVM_INFO alu_scoreboard.sv(56) @ 95000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=1 b=14 op=3 => result=15
+# UVM_INFO alu_sequence.sv(23) @ 95000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=8, b=5, op=3, result=x
+# UVM_INFO alu_driver.sv(31) @ 105000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 10, b = 8, op = 0
+# UVM_INFO alu_monitor.sv(49) @ 105000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 8, b = 5, op = 3, result = 13
+# UVM_INFO alu_scoreboard.sv(56) @ 105000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=8 b=5 op=3 => result=13
+# UVM_INFO alu_monitor.sv(49) @ 115000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 8, b = 5, op = 3, result = 13
+# UVM_INFO alu_scoreboard.sv(56) @ 115000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=8 b=5 op=3 => result=13
+# UVM_INFO alu_sequence.sv(23) @ 115000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=10, b=8, op=0, result=x
+# UVM_INFO alu_driver.sv(31) @ 125000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 14, b = 1, op = 2
+# UVM_INFO alu_monitor.sv(49) @ 125000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 10, b = 8, op = 0, result = 2
+# UVM_INFO alu_scoreboard.sv(56) @ 125000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=10 b=8 op=0 => result=2
+# UVM_INFO alu_monitor.sv(49) @ 135000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 10, b = 8, op = 0, result = 2
+# UVM_INFO alu_scoreboard.sv(56) @ 135000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=10 b=8 op=0 => result=2
+# UVM_INFO alu_sequence.sv(23) @ 135000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=14, b=1, op=2, result=x
+# UVM_INFO alu_driver.sv(31) @ 145000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 10, b = 12, op = 1
+# UVM_INFO alu_monitor.sv(49) @ 145000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 14, b = 1, op = 2, result = 0
+# UVM_INFO alu_scoreboard.sv(56) @ 145000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=14 b=1 op=2 => result=0
+# UVM_INFO alu_monitor.sv(49) @ 155000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 14, b = 1, op = 2, result = 0
+# UVM_INFO alu_scoreboard.sv(56) @ 155000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=14 b=1 op=2 => result=0
+# UVM_INFO alu_sequence.sv(23) @ 155000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=10, b=12, op=1, result=x
+# UVM_INFO alu_driver.sv(31) @ 165000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 11, b = 13, op = 1
+# UVM_INFO alu_monitor.sv(49) @ 165000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 10, b = 12, op = 1, result = 14
+# UVM_INFO alu_scoreboard.sv(56) @ 165000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=10 b=12 op=1 => result=14
+# UVM_INFO alu_monitor.sv(49) @ 175000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 10, b = 12, op = 1, result = 14
+# UVM_INFO alu_scoreboard.sv(56) @ 175000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=10 b=12 op=1 => result=14
+# UVM_INFO alu_sequence.sv(23) @ 175000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=11, b=13, op=1, result=x
+# UVM_INFO alu_driver.sv(31) @ 185000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 7, b = 11, op = 2
+# UVM_INFO alu_monitor.sv(49) @ 185000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 11, b = 13, op = 1, result = 14
+# UVM_INFO alu_scoreboard.sv(56) @ 185000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=11 b=13 op=1 => result=14
+# UVM_INFO alu_monitor.sv(49) @ 195000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 11, b = 13, op = 1, result = 14
+# UVM_INFO alu_scoreboard.sv(56) @ 195000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=11 b=13 op=1 => result=14
+# UVM_INFO alu_sequence.sv(23) @ 195000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=7, b=11, op=2, result=x
+# UVM_INFO alu_monitor.sv(49) @ 205000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 205000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 215000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 215000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 225000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 225000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 235000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 235000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 245000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 245000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 255000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 255000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 265000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 265000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 275000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 275000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 285000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 285000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 295000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO alu_monitor.sv(49) @ 295000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 295000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_scoreboard.sv(67) @ 295000: uvm_test_top.envh.scbh [PASS_COUNT] pass count  = 26
+# UVM_INFO alu_scoreboard.sv(68) @ 295000: uvm_test_top.envh.scbh [ERROR_COUNT] error count = 1
+# UVM_INFO alu_scoreboard.sv(70) @ 295000: uvm_test_top.envh.scbh [alu_scoreboard] TEST FAILED
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   83
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# [ERROR_COUNT]     1
+# [PASS_COUNT]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [alu_driver]    10
+# [alu_env]     1
+# [alu_monitor]    27
+# [alu_scoreboard]    29
+# [alu_sequence]    11
+# ** Note: $finish    : D:/programs/questasim download/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 295 ns  Iteration: 53  Instance: /tb_top
+# Break in Task uvm_pkg/uvm_root::run_test at D:/programs/questasim download/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# 
+# -----------------------------------------------------
+# MERGE ALL PER-TEST COVERAGE DATABASES INTO ONE
+# -----------------------------------------------------
+# puts ""
+# 
+# puts "===================================="
+# ====================================
+# puts "MERGING COVERAGE DATABASES"
+# MERGING COVERAGE DATABASES
+# puts "===================================="
+# ====================================
+# puts ""
+# 
+# 
+# set ucdb_files {}
+# foreach t $testlist {
+#     lappend ucdb_files coverage/${t}.ucdb
+# }
+# 
+# vcover merge coverage/merged.ucdb {*}$ucdb_files
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 10:08:47 on Sep 30,2026
+# vcover merge coverage/merged.ucdb coverage/alu_test.ucdb 
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Merging file coverage/alu_test.ucdb
+# Writing merged result to coverage/merged.ucdb
+# 
+# End time: 10:08:47 on Sep 30,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcover report coverage/merged.ucdb -output coverage/regression_summary.txt -details
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 10:08:47 on Sep 30,2026
+# vcover report coverage/merged.ucdb -output coverage/regression_summary.txt -details 
+# End time: 10:08:47 on Sep 30,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+quit -sim
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/LENOVO/Desktop/Digital_Electronics/UVM_ALU/ALU_Verification_UVM.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/LENOVO/Desktop/Digital_Electronics/UVM_ALU/ALU_Verification_UVM.mpf).  File can not be renamed.
+# End time: 10:15:05 on Sep 30,2026, Elapsed time: 0:06:59
+# Errors: 2, Warnings: 3
+do run_alu.do
+# 
+# if {[file exists work]} {
+#     vdel -all -lib work
+# }
+# 
+# vlib work
+# vmap work work
+# QuestaSim-64 vmap 2021.1 Lib Mapping Utility 2021.01 Jan 19 2021
+# vmap work work 
+# Modifying C:/Users/LENOVO/Desktop/Digital_Electronics/UVM_ALU/ALU_Verification_UVM.mpf
+# 
+# file mkdir logs
+# file mkdir coverage
+# 
+# puts ""
+# 
+# puts "===================================="
+# ====================================
+# puts "COMPILING FILES"
+# COMPILING FILES
+# puts "===================================="
+# ====================================
+# puts ""
+# 
+# 
+# 
+# vlog -sv +cover=bcesfx ./rtl/alu.sv
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 10:15:54 on Sep 30,2026
+# vlog -reportprogress 300 -sv "+cover=bcesfx" ./rtl/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 10:15:54 on Sep 30,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv ./alu_if.sv
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 10:15:54 on Sep 30,2026
+# vlog -reportprogress 300 -sv ./alu_if.sv 
+# -- Compiling interface alu_if
+# 
+# Top level modules:
+# 	--none--
+# End time: 10:15:54 on Sep 30,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv +incdir+. ./alu_tb_pkg.sv
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 10:15:54 on Sep 30,2026
+# vlog -reportprogress 300 -sv "+incdir+." ./alu_tb_pkg.sv 
+# -- Compiling package alu_tb_pkg
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Note: (vlog-2286) ./alu_tb_pkg.sv(4): Using implicit +incdir+D:/programs/questasim download/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 10:15:54 on Sep 30,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv ./alu_tb_top.sv
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 10:15:54 on Sep 30,2026
+# vlog -reportprogress 300 -sv ./alu_tb_top.sv 
+# -- Compiling module tb_top
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# ** Note: (vlog-2286) ./alu_tb_top.sv(6): Using implicit +incdir+D:/programs/questasim download/uvm-1.1d/../verilog_src/uvm-1.1d/src from import uvm_pkg
+# -- Importing package alu_tb_pkg
+# 
+# Top level modules:
+# 	tb_top
+# End time: 10:15:54 on Sep 30,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# puts ""
+# 
+# puts "===================================="
+# ====================================
+# puts "ELABORATING DESIGN"
+# ELABORATING DESIGN
+# puts "===================================="
+# ====================================
+# puts ""
+# 
+# 
+# vopt +acc tb_top -o tb_top_opt
+# QuestaSim-64 vopt 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 10:15:54 on Sep 30,2026
+# vopt -reportprogress 300 "+acc" tb_top -o tb_top_opt 
+# 
+# Top level modules:
+# 	tb_top
+# 
+# Analyzing design...
+# -- Loading module tb_top
+# -- Importing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)
+# -- Importing package alu_tb_pkg
+# -- Loading package mtiUvm.questa_uvm_pkg
+# -- Loading interface alu_if
+# -- Loading module alu
+# Optimizing 7 design-units (inlining 0/3 module instances):
+# -- Optimizing package mtiUvm.uvm_pkg (uvm-1.1d Built-in)(fast)
+# -- Optimizing package mtiUvm.questa_uvm_pkg(fast)
+# -- Optimizing package alu_tb_pkg(fast)
+# -- Optimizing module tb_top(fast)
+# -- Optimizing module alu(fast)
+# -- Optimizing interface alu_if(fast__2)
+# -- Optimizing interface alu_if(fast)
+# Optimized design name is tb_top_opt
+# End time: 10:15:56 on Sep 30,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 0
+# 
+# -----------------------------------------------------
+# LIST OF TESTS (UVM class names)
+# -----------------------------------------------------
+# set testlist {
+#     alu_test
+# }
+# 
+#     alu_test
+# 
+# 
+# -----------------------------------------------------
+# RUN EACH TEST IN ITS OWN vsim SESSION / LOG FILE
+# -----------------------------------------------------
+# foreach t $testlist {
+# 
+#     puts ""
+#     puts "===================================="
+#     puts "RUNNING TEST: $t"
+#     puts "===================================="
+#     puts ""
+# 
+#     vsim -c -coverage tb_top_opt -l logs/${t}.log +UVM_TESTNAME=${t}
+# 
+#     # UVM calls $finish at the end of run_test.
+#     # Without this, vsim would exit and the commands below would never run.
+#     onfinish stop
+# 
+#     run -all
+# 
+#     # save this test's coverage database
+#     coverage save coverage/${t}.ucdb
+# 
+# 
+#     # write a per-test human-readable coverage report
+#     vcover report coverage/${t}.ucdb -output coverage/${t}_report.txt -details
+# }
+# 
+# ====================================
+# RUNNING TEST: alu_test
+# ====================================
+# 
+# vsim -c -coverage tb_top_opt -l logs/alu_test.log "+UVM_TESTNAME=alu_test" 
+# Start time: 10:15:56 on Sep 30,2026
+# Loading sv_std.std
+# Loading work.alu_if(fast)
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.alu_tb_pkg(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading work.alu_if(fast__2)
+# Loading work.alu(fast)
+# Loading D:/programs/questasim download/uvm-1.1d\win64\uvm_dpi.dll
+# ----------------------------------------------------------------
+# UVM-1.1d
+# (C) 2007-2013 Mentor Graphics Corporation
+# (C) 2007-2013 Cadence Design Systems, Inc.
+# (C) 2006-2013 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_MUST_HAVE_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(277) @ 0: reporter [Questa UVM] QUESTA_UVM-1.2.3
+# UVM_INFO verilog_src/questa_uvm_pkg-1.2/src/questa_uvm_pkg.sv(278) @ 0: reporter [Questa UVM]  questa_uvm::init(+struct)
+# UVM_INFO @ 0: reporter [RNTST] Running test alu_test...
+# UVM_INFO alu_env.sv(23) @ 0: uvm_test_top.envh [alu_env] ALU Environment build phase
+# UVM_INFO alu_scoreboard.sv(25) @ 0: uvm_test_top.envh.scbh [alu_scoreboard] alu scoreboard build phase
+# UVM_INFO alu_sequence.sv(15) @ 0: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] starting the uvm sequence
+# UVM_INFO alu_driver.sv(31) @ 5000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 9, b = 7, op = 1
+# UVM_INFO alu_sequence.sv(23) @ 15000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=9, b=7, op=1, result=x
+# UVM_INFO alu_driver.sv(31) @ 25000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 3, b = 3, op = 1
+# UVM_INFO alu_monitor.sv(49) @ 35000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 9, b = 7, op = 1, result = 0
+# UVM_ERROR alu_scoreboard.sv(50) @ 35000: uvm_test_top.envh.scbh [alu_scoreboard] Mismatch a=9 b=7 op=1 => result=0 expected=2
+# UVM_INFO alu_sequence.sv(23) @ 35000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=3, b=3, op=1, result=x
+# UVM_INFO alu_driver.sv(31) @ 45000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 5, b = 12, op = 0
+# UVM_INFO alu_monitor.sv(49) @ 45000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 3, b = 3, op = 1, result = 0
+# UVM_INFO alu_scoreboard.sv(56) @ 45000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=3 b=3 op=1 => result=0
+# UVM_INFO alu_monitor.sv(49) @ 55000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 3, b = 3, op = 1, result = 0
+# UVM_INFO alu_scoreboard.sv(56) @ 55000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=3 b=3 op=1 => result=0
+# UVM_INFO alu_sequence.sv(23) @ 55000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=5, b=12, op=0, result=x
+# UVM_INFO alu_driver.sv(31) @ 65000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 1, b = 14, op = 3
+# UVM_INFO alu_monitor.sv(49) @ 65000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 5, b = 12, op = 0, result = 1
+# UVM_INFO alu_scoreboard.sv(56) @ 65000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=5 b=12 op=0 => result=1
+# UVM_INFO alu_monitor.sv(49) @ 75000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 5, b = 12, op = 0, result = 1
+# UVM_INFO alu_scoreboard.sv(56) @ 75000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=5 b=12 op=0 => result=1
+# UVM_INFO alu_sequence.sv(23) @ 75000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=1, b=14, op=3, result=x
+# UVM_INFO alu_driver.sv(31) @ 85000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 8, b = 5, op = 3
+# UVM_INFO alu_monitor.sv(49) @ 85000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 1, b = 14, op = 3, result = 15
+# UVM_INFO alu_scoreboard.sv(56) @ 85000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=1 b=14 op=3 => result=15
+# UVM_INFO alu_monitor.sv(49) @ 95000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 1, b = 14, op = 3, result = 15
+# UVM_INFO alu_scoreboard.sv(56) @ 95000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=1 b=14 op=3 => result=15
+# UVM_INFO alu_sequence.sv(23) @ 95000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=8, b=5, op=3, result=x
+# UVM_INFO alu_driver.sv(31) @ 105000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 10, b = 8, op = 0
+# UVM_INFO alu_monitor.sv(49) @ 105000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 8, b = 5, op = 3, result = 13
+# UVM_INFO alu_scoreboard.sv(56) @ 105000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=8 b=5 op=3 => result=13
+# UVM_INFO alu_monitor.sv(49) @ 115000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 8, b = 5, op = 3, result = 13
+# UVM_INFO alu_scoreboard.sv(56) @ 115000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=8 b=5 op=3 => result=13
+# UVM_INFO alu_sequence.sv(23) @ 115000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=10, b=8, op=0, result=x
+# UVM_INFO alu_driver.sv(31) @ 125000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 14, b = 1, op = 2
+# UVM_INFO alu_monitor.sv(49) @ 125000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 10, b = 8, op = 0, result = 2
+# UVM_INFO alu_scoreboard.sv(56) @ 125000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=10 b=8 op=0 => result=2
+# UVM_INFO alu_monitor.sv(49) @ 135000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 10, b = 8, op = 0, result = 2
+# UVM_INFO alu_scoreboard.sv(56) @ 135000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=10 b=8 op=0 => result=2
+# UVM_INFO alu_sequence.sv(23) @ 135000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=14, b=1, op=2, result=x
+# UVM_INFO alu_driver.sv(31) @ 145000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 10, b = 12, op = 1
+# UVM_INFO alu_monitor.sv(49) @ 145000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 14, b = 1, op = 2, result = 0
+# UVM_INFO alu_scoreboard.sv(56) @ 145000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=14 b=1 op=2 => result=0
+# UVM_INFO alu_monitor.sv(49) @ 155000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 14, b = 1, op = 2, result = 0
+# UVM_INFO alu_scoreboard.sv(56) @ 155000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=14 b=1 op=2 => result=0
+# UVM_INFO alu_sequence.sv(23) @ 155000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=10, b=12, op=1, result=x
+# UVM_INFO alu_driver.sv(31) @ 165000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 11, b = 13, op = 1
+# UVM_INFO alu_monitor.sv(49) @ 165000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 10, b = 12, op = 1, result = 14
+# UVM_INFO alu_scoreboard.sv(56) @ 165000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=10 b=12 op=1 => result=14
+# UVM_INFO alu_monitor.sv(49) @ 175000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 10, b = 12, op = 1, result = 14
+# UVM_INFO alu_scoreboard.sv(56) @ 175000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=10 b=12 op=1 => result=14
+# UVM_INFO alu_sequence.sv(23) @ 175000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=11, b=13, op=1, result=x
+# UVM_INFO alu_driver.sv(31) @ 185000: uvm_test_top.envh.agenth.drvh [alu_driver] Driver driven a = 7, b = 11, op = 2
+# UVM_INFO alu_monitor.sv(49) @ 185000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 11, b = 13, op = 1, result = 14
+# UVM_INFO alu_scoreboard.sv(56) @ 185000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=11 b=13 op=1 => result=14
+# UVM_INFO alu_monitor.sv(49) @ 195000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 11, b = 13, op = 1, result = 14
+# UVM_INFO alu_scoreboard.sv(56) @ 195000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=11 b=13 op=1 => result=14
+# UVM_INFO alu_sequence.sv(23) @ 195000: uvm_test_top.envh.agenth.sqrh@@seqh [alu_sequence] generated transaction a=7, b=11, op=2, result=x
+# UVM_INFO alu_monitor.sv(49) @ 205000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 205000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 215000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 215000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 225000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 225000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 235000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 235000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 245000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 245000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 255000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 255000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 265000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 265000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 275000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 275000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_monitor.sv(49) @ 285000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 285000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO verilog_src/uvm-1.1d/src/base/uvm_objection.svh(1267) @ 295000: reporter [TEST_DONE] 'run' phase is ready to proceed to the 'extract' phase
+# UVM_INFO alu_monitor.sv(49) @ 295000: uvm_test_top.envh.agenth.monh [alu_monitor] monitored a = 7, b = 11, op = 2, result = 3
+# UVM_INFO alu_scoreboard.sv(56) @ 295000: uvm_test_top.envh.scbh [alu_scoreboard] Match a=7 b=11 op=2 => result=3
+# UVM_INFO alu_scoreboard.sv(67) @ 295000: uvm_test_top.envh.scbh [PASS_COUNT] pass count  = 26
+# UVM_INFO alu_scoreboard.sv(68) @ 295000: uvm_test_top.envh.scbh [ERROR_COUNT] error count = 1
+# UVM_INFO alu_scoreboard.sv(70) @ 295000: uvm_test_top.envh.scbh [alu_scoreboard] TEST FAILED
+# 
+# --- UVM Report Summary ---
+# 
+# ** Report counts by severity
+# UVM_INFO :   83
+# UVM_WARNING :    0
+# UVM_ERROR :    1
+# UVM_FATAL :    0
+# ** Report counts by id
+# [ERROR_COUNT]     1
+# [PASS_COUNT]     1
+# [Questa UVM]     2
+# [RNTST]     1
+# [TEST_DONE]     1
+# [alu_driver]    10
+# [alu_env]     1
+# [alu_monitor]    27
+# [alu_scoreboard]    29
+# [alu_sequence]    11
+# ** Note: $finish    : D:/programs/questasim download/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh(430)
+#    Time: 295 ns  Iteration: 53  Instance: /tb_top
+# Break in Task uvm_pkg/uvm_root::run_test at D:/programs/questasim download/win64/../verilog_src/uvm-1.1d/src/base/uvm_root.svh line 430
+# 
+# -----------------------------------------------------
+# MERGE ALL PER-TEST COVERAGE DATABASES INTO ONE
+# -----------------------------------------------------
+# puts ""
+# 
+# puts "===================================="
+# ====================================
+# puts "MERGING COVERAGE DATABASES"
+# MERGING COVERAGE DATABASES
+# puts "===================================="
+# ====================================
+# puts ""
+# 
+# 
+# set ucdb_files {}
+# foreach t $testlist {
+#     lappend ucdb_files coverage/${t}.ucdb
+# }
+# 
+# vcover merge coverage/merged.ucdb {*}$ucdb_files
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 10:16:04 on Sep 30,2026
+# vcover merge coverage/merged.ucdb coverage/alu_test.ucdb 
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Merging file coverage/alu_test.ucdb
+# Writing merged result to coverage/merged.ucdb
+# 
+# End time: 10:16:04 on Sep 30,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcover report coverage/merged.ucdb -output coverage/regression_summary.txt -details -du alu
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 10:16:04 on Sep 30,2026
+# vcover report coverage/merged.ucdb -output coverage/regression_summary.txt -details -du alu 
+# End time: 10:16:04 on Sep 30,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** UI-Msg: (vcover-4003) Invalid option '-du'.
+# Usage:
+#        vcover report <rpt_options> <ucdb_or_coverstore_test>
+#        <rpt_options> = <mutual_options> [<html_options>| <txt_options>]
+#        <mutual_options> = [-annotate] [-assert] [-binrhs] [-code [bcesf(t|x)]] [-codeAll] [-concurrent|-immediate]
+#                           [-cvg] [-details] [-directive] [-du=<du_name>] [-failed] [-filter <string>]
+#                           [-help] [-hidecvginsts] [-hidecvginstspi0] [-instance=<path>[.]] [-lang sva|psl|vhdl]
+#                           [-library <libname>] [-multibitverbose] [-nocompactcrossbins] [-noconcurr] [-nocvgbin]
+#                           [-noignorebins] [-noimmed] [-nomissing] [-notimestamps] [-nozeroweights]
+#                           [-output <file_path>] [-pa] [-pacombined] [-package=<pkgname>]
+#                           [-plansection=<testplan_section_path>[.]] [-precision <int>]
+#                           [-samples ([-le|-ge] <int> | <int>-<int>)]
+#                           [-severity info|note|warning|error|failure|fatal] [-showenabledcodecov] [-showexcluded]
+#                           [-summary] [-testattr] [-testdetails] [-usecnpm] [-uselimit] [-verbose] [-zeros]
+#        <txt_options> = [-2state] [-above <percent> | -below <percent>] [-all]
+#                        [-append] [-comment] [-config] [-covered] [-coverenhanced] [-dumptables] [-duplicates]
+#                        [-flat [-primarykey <type|path|value>] [-secondarykey <type|path|value>]]
+#                        [-memory] [-nocomment] [-noexcludedhits] [-option]
+#                        [-portmode <inputs|outputs|inouts|ports|internals>] [-recursive]
+#                        [-showambiguity] [-select <inputs|outputs|inouts|ports|internals>]
+#                        [-srcfile=<file_name+file_name1>] [-testextract <test_name_or_pattern>] [-toggles]
+#                        [-unattemptedimmed]
+#        <html_options> = -html [-testhitdata[=<int>]] [-testhitdataAll] 
+#                         [-threshH <pct>] [-threshL <pct>]
+#        <ucdb_or_coverstore_test> = ([<ucdbfile>|<coverstore[:testname]])
+#        <common options> = [(-suppress|-note|-warning|-error|-fatal) <msgNumber>[,<msgNumber>...]]
+#                           [-stats[=[+-]all,none,time,cmd,msg,perf,verbose,list,kb]]
+#                           [-[w]prof=<filename>] [-proftick=<integer>] [-version]
+# Error in macro ./run_alu.do line 87
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 10:16:04 on Sep 30,2026
+# vcover report coverage/merged.ucdb -output coverage/regression_summary.txt -details -du alu 
+# End time: 10:16:04 on Sep 30,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# ** UI-Msg: (vcover-4003) Invalid option '-du'.
+# Usage:
+#        vcover report <rpt_options> <ucdb_or_coverstore_test>
+#        <rpt_options> = <mutual_options> [<html_options>| <txt_options>]
+#        <mutual_options> = [-annotate] [-assert] [-binrhs] [-code [bcesf(t|x)]] [-codeAll] [-concurrent|-immediate]
+#                           [-cvg] [-details] [-directive] [-du=<du_name>] [-failed] [-filter <string>]
+#                           [-help] [-hidecvginsts] [-hidecvginstspi0] [-instance=<path>[.]] [-lang sva|psl|vhdl]
+#                           [-library <libname>] [-multibitverbose] [-nocompactcrossbins] [-noconcurr] [-nocvgbin]
+#                           [-noignorebins] [-noimmed] [-nomissing] [-notimestamps] [-nozeroweights]
+#                           [-output <file_path>] [-pa] [-pacombined] [-package=<pkgname>]
+#                           [-plansection=<testplan_section_path>[.]] [-precision <int>]
+#                           [-samples ([-le|-ge] <int> | <int>-<int>)]
+#                           [-severity info|note|warning|error|failure|fatal] [-showenabledcodecov] [-showexcluded]
+#                           [-summary] [-testattr] [-testdetails] [-usecnpm] [-uselimit] [-verbose] [-zeros]
+#        <txt_options> = [-2state] [-above <percent> | -below <percent>] [-all]
+#                        [-append] [-comment] [-config] [-covered] [-coverenhanced] [-dumptables] [-duplicates]
+#                        [-flat [-primarykey <type|path|value>] [-secondarykey <type|path|value>]]
+#                        [-memory] [-nocomment] [-noexcludedhits] [-option]
+#                        [-portmode <inputs|outputs|inouts|ports|internals>] [-recursive]
+#                        [-showambiguity] [-select <inputs|outputs|inouts|ports|internals>]
+#                        [-srcfile=<file_name+file_name1>] [-testextract <test_name_or_pattern>] [-toggles]
+#                        [-unattemptedimmed]
+#        <html_options> = -html [-testhitdata[=<int>]] [-testhitdataAll] 
+#                         [-threshH <pct>] [-threshL <pct>]
+#        <ucdb_or_coverstore_test> = ([<ucdbfile>|<coverstore[:testname]])
+#        <common options> = [(-suppress|-note|-warning|-error|-fatal) <msgNumber>[,<msgNumber>...]]
+#                           [-stats[=[+-]all,none,time,cmd,msg,perf,verbose,list,kb]]
+#                           [-[w]prof=<filename>] [-proftick=<integer>] [-version]
+# 
+#     while executing
+# "error [FixExecError $msg]"
+#     (procedure "vcover" line 24)
+#     invoked from within
+# "vcover report coverage/merged.ucdb -output coverage/regression_summary.txt -details -du alu"
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/LENOVO/Desktop/Digital_Electronics/UVM_ALU/ALU_Verification_UVM.mpf).  File can not be renamed.
+# ** Error: Acs sdne.
+# 
+#        Unable to replace existing ini file (C:/Users/LENOVO/Desktop/Digital_Electronics/UVM_ALU/ALU_Verification_UVM.mpf).  File can not be renamed.
+# End time: 10:16:29 on Sep 30,2026, Elapsed time: 0:00:33
+# Errors: 2, Warnings: 1
