@@ -1,0 +1,1312 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /tb_top/alu_vif
+=== Design Unit: work.alu_if
+=================================================================================
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         36        31         5    86.11%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /tb_top/alu_vif --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                               rst           1           0           0           0           0           0           3       16.66 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =         16 
+Toggled Node Count   =         15 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =      86.11% (31 of 36 bins)
+
+=================================================================================
+=== Instance: /tb_top/dut
+=== Design Unit: work.alu
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         7         6         1    85.71%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_top/dut
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ./rtl/alu.sv
+------------------------------------IF Branch------------------------------------
+    11                                        19     Count coming in to IF
+    11              1                          3     
+    13              1                         16     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    14                                        16     Count coming in to CASE
+    15              1                          4     
+    16              1                          4     
+    17              1                          4     
+    18              1                          4     
+                                         ***0***     All False Count
+Branch totals: 4 hits of 5 branches = 80.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                       6         6         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_top/dut --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ./rtl/alu.sv
+    10              1                         19     
+    12              1                          3     
+    15              1                          4     
+    16              1                          4     
+    17              1                          4     
+    18              1                          4     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         36        31         5    86.11%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /tb_top/dut --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+                                               rst           1           0           0           0           0           0           3       16.66 
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =         16 
+Toggled Node Count   =         15 
+Untoggled Node Count =          1 
+
+Toggle Coverage      =      86.11% (31 of 36 bins)
+
+=================================================================================
+=== Instance: /tb_top
+=== Design Unit: work.tb_top
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                         2         0         2     0.00%
+
+================================Branch Details================================
+
+Branch Coverage for instance /tb_top
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ./alu_tb_top.sv
+------------------------------------IF Branch------------------------------------
+    54                                   ***0***     Count coming in to IF
+    54              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      10         9         1    90.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /tb_top --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File ./alu_tb_top.sv
+    13              1                         60     
+    13              2                         59     
+    36              1                          1     
+    37              1                          3     
+    37              2                          3     
+    38              1                          1     
+    45              1                          1     
+    46              1                          1     
+    53              1                          1     
+    54              1                    ***0***     
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                          2         2         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for instance /tb_top --
+
+                                              Node      1H->0L      0L->1H       0L->Z       Z->0L       1H->Z       Z->H1     ExtMode  "Coverage"
+                                              ---------------------------------------------------------------------------------------------------
+
+========
+(n*) - Number was not used in coverage calculations performed by extended toggle algorithms.
+
+Extended Toggle Coverage Calculation Criteria:
+-----------------------------------------------
+	ExtMode 1: 0L->1H & 1H->0L & any one 'Z' transition (to/from 'Z').
+	ExtMode 2: 0L->1H & 1H->0L & one transition to 'Z' & one transition from 'Z'.
+	ExtMode 3: 0L->1H & 1H->0L & all 'Z' transitions.
+========
+
+Total Node Count     =          1 
+Toggled Node Count   =          1 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (2 of 2 bins)
+
+=================================================================================
+=== Instance: /alu_tb_pkg
+=== Design Unit: work.alu_tb_pkg
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        77        28        49    36.36%
+
+================================Branch Details================================
+
+Branch Coverage for instance /alu_tb_pkg
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File alu_seq_item.sv
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               2                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               3                    ***0***     
+    7               4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               5                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+
+  File alu_sequence.sv
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               2                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               3                    ***0***     
+    7               4                    ***0***     
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               5                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    7                                    ***0***     Count coming in to IF
+    7               6                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    15                                         1     Count coming in to IF
+    15              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    20                                        10     Count coming in to IF
+    20              1                    ***0***     
+                                              10     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    21                                   ***0***     Count coming in to IF
+    21              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    23                                        10     Count coming in to IF
+    23              1                         10     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File alu_driver.sv
+------------------------------------IF Branch------------------------------------
+    17                                         1     Count coming in to IF
+    17              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    18                                   ***0***     Count coming in to IF
+    18              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    31                                        10     Count coming in to IF
+    31              1                         10     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File alu_monitor.sv
+------------------------------------IF Branch------------------------------------
+    23                                         1     Count coming in to IF
+    23              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    24                                   ***0***     Count coming in to IF
+    24              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    36                                        30     Count coming in to IF
+    36              1                          2     
+    39              1                         28     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    41                                        28     Count coming in to IF
+    41              1                         27     
+                                               1     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    49                                        27     Count coming in to IF
+    49              1                         27     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File alu_scoreboard.sv
+------------------------------------IF Branch------------------------------------
+    25                                         1     Count coming in to IF
+    25              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------CASE Branch------------------------------------
+    41                                        27     Count coming in to CASE
+    42              1                          4     
+    43              1                          7     
+    44              1                         12     
+    45              1                          4     
+    46              1                    ***0***     
+Branch totals: 4 hits of 5 branches = 80.00%
+
+------------------------------------IF Branch------------------------------------
+    49                                        27     Count coming in to IF
+    49              1                          1     
+    55              1                         26     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    50                                         1     Count coming in to IF
+    50              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    56                                        26     Count coming in to IF
+    56              1                         26     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    67                                         1     Count coming in to IF
+    67              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    68                                         1     Count coming in to IF
+    68              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    69                                         1     Count coming in to IF
+    69              1                    ***0***     
+    70              1                          1     
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    69                                   ***0***     Count coming in to IF
+    69              2                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    70                                         1     Count coming in to IF
+    70              2                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File alu_agent.sv
+------------------------------------IF Branch------------------------------------
+    22                                         1     Count coming in to IF
+    22              1                    ***0***     
+                                               1     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    23                                   ***0***     Count coming in to IF
+    23              1                    ***0***     
+                                         ***0***     All False Count
+Branch totals: 0 hits of 2 branches = 0.00%
+
+------------------------------------IF Branch------------------------------------
+    27                                         1     Count coming in to IF
+    27              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    38                                         1     Count coming in to IF
+    38              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+  File alu_env.sv
+------------------------------------IF Branch------------------------------------
+    23                                         1     Count coming in to IF
+    23              1                          1     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       8         1         7    12.50%
+
+================================Condition Details================================
+
+Condition Coverage for instance /alu_tb_pkg --
+
+  File alu_seq_item.sv
+----------------Focused Condition View-------------------
+Line       7 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       7 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:    ***0***  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+----------------Focused Condition View-------------------
+Line       7 Item    1  (name != 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+   Input Term   Covered  Reason for no coverage   Hint
+  -----------  --------  -----------------------  --------------
+  (name != 0)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:    ***0***  (name != 0)_0         -                             
+  Row   2:    ***0***  (name != 0)_1         -                             
+
+----------------Focused Condition View-------------------
+Line       7 Item    2  (tmp_data__ != null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+            Input Term   Covered  Reason for no coverage   Hint
+           -----------  --------  -----------------------  --------------
+  (tmp_data__ != null)         N  No hits                  Hit '_0' and '_1'
+
+     Rows:       Hits  FEC Target              Non-masking condition(s)      
+ ---------  ---------  --------------------    -------------------------     
+  Row   1:    ***0***  (tmp_data__ != null)_0  -                             
+  Row   2:    ***0***  (tmp_data__ != null)_1  -                             
+
+
+
+----------------Focused Condition View-------------------
+Line       17 Item    1  (this.vif == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+          Input Term   Covered  Reason for no coverage   Hint
+         -----------  --------  -----------------------  --------------
+  (this.vif == null)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (this.vif == null)_0  -                             
+  Row   2:    ***0***  (this.vif == null)_1  -                             
+
+
+----------------Focused Condition View-------------------
+Line       23 Item    1  (this.vif == null)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+          Input Term   Covered  Reason for no coverage   Hint
+         -----------  --------  -----------------------  --------------
+  (this.vif == null)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (this.vif == null)_0  -                             
+  Row   2:    ***0***  (this.vif == null)_1  -                             
+
+
+
+----------------Focused Condition View-------------------
+Line       49 Item    1  (trn.result !== expected)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+----------------Focused Condition View-------------------
+Line       69 Item    1  (this.error_count == 0)
+Condition totals: 0 of 1 input term covered = 0.00%
+
+               Input Term   Covered  Reason for no coverage   Hint
+              -----------  --------  -----------------------  --------------
+  (this.error_count == 0)         N  '_1' not hit             Hit '_1'
+
+     Rows:       Hits  FEC Target                 Non-masking condition(s)      
+ ---------  ---------  --------------------       -------------------------     
+  Row   1:          1  (this.error_count == 0)_0  -                             
+  Row   2:    ***0***  (this.error_count == 0)_1  -                             
+
+
+
+
+
+
+Covergroup Coverage:
+    Covergroups                      1        na        na    72.75%
+        Coverpoints/Crosses          4        na        na        na
+            Covergroup Bins        276        28       248    10.14%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /alu_tb_pkg/alu_coverage/alu_cg                  72.75%        100          -    Uncovered            
+    covered/total bins:                                    28        276          -                      
+    missing/total bins:                                   248        276          -                      
+    % Hit:                                             10.14%        100          -                      
+    Coverpoint cp_a                                    87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        bin auto[0:1]                                       2          1          -    Covered              
+        bin auto[2:3]                                       2          1          -    Covered              
+        bin auto[4:5]                                       2          1          -    Covered              
+        bin auto[6:7]                                      10          1          -    Covered              
+        bin auto[8:9]                                       3          1          -    Covered              
+        bin auto[10:11]                                     6          1          -    Covered              
+        bin auto[12:13]                                     0          1          -    ZERO                 
+        bin auto[14:15]                                     2          1          -    Covered              
+    Coverpoint cp_b                                   100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0:1]                                       2          1          -    Covered              
+        bin auto[2:3]                                       2          1          -    Covered              
+        bin auto[4:5]                                       2          1          -    Covered              
+        bin auto[6:7]                                       1          1          -    Covered              
+        bin auto[8:9]                                       2          1          -    Covered              
+        bin auto[10:11]                                    10          1          -    Covered              
+        bin auto[12:13]                                     6          1          -    Covered              
+        bin auto[14:15]                                     2          1          -    Covered              
+    Coverpoint cp_op                                  100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                         4          1          -    Covered              
+        bin auto[1]                                         7          1          -    Covered              
+        bin auto[2]                                        12          1          -    Covered              
+        bin auto[3]                                         4          1          -    Covered              
+    Cross cross_all                                     3.51%        100          -    Uncovered            
+        covered/total bins:                                 9        256          -                      
+        missing/total bins:                               247        256          -                      
+        % Hit:                                          3.51%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[0:1],auto[14:15],auto[3]>             2          1          -    Covered              
+            bin <auto[8:9],auto[4:5],auto[3]>               2          1          -    Covered              
+            bin <auto[6:7],auto[10:11],auto[2]>            10          1          -    Covered              
+            bin <auto[14:15],auto[0:1],auto[2]>             2          1          -    Covered              
+            bin <auto[10:11],auto[12:13],auto[1]>           4          1          -    Covered              
+            bin <auto[8:9],auto[6:7],auto[1]>               1          1          -    Covered              
+            bin <auto[2:3],auto[2:3],auto[1]>               2          1          -    Covered              
+            bin <auto[4:5],auto[12:13],auto[0]>             2          1          -    Covered              
+            bin <auto[10:11],auto[8:9],auto[0]>             2          1          -    Covered              
+            bin <auto[12:13],*,*>                           0          1         32    ZERO                 
+            bin <auto[14:15],auto[14:15],*>                 0          1          4    ZERO                 
+            bin <auto[10:11],auto[14:15],*>                 0          1          4    ZERO                 
+            bin <auto[8:9],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[4:5],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[2:3],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[14:15],auto[12:13],*>                 0          1          4    ZERO                 
+            bin <auto[8:9],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[2:3],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[0:1],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[14:15],auto[10:11],*>                 0          1          4    ZERO                 
+            bin <auto[10:11],auto[10:11],*>                 0          1          4    ZERO                 
+            bin <auto[8:9],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[4:5],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[2:3],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[0:1],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[14:15],auto[8:9],*>                   0          1          4    ZERO                 
+            bin <auto[8:9],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[6:7],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],auto[6:7],*>                   0          1          4    ZERO                 
+            bin <auto[10:11],auto[6:7],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],auto[4:5],*>                   0          1          4    ZERO                 
+            bin <auto[10:11],auto[4:5],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],auto[2:3],*>                   0          1          4    ZERO                 
+            bin <auto[10:11],auto[2:3],*>                   0          1          4    ZERO                 
+            bin <auto[8:9],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[6:7],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[10:11],auto[0:1],*>                   0          1          4    ZERO                 
+            bin <auto[8:9],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[6:7],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],*,auto[3]>                     0          1          8    ZERO                 
+            bin <auto[10:11],*,auto[3]>                     0          1          8    ZERO                 
+            bin <auto[6:7],*,auto[3]>                       0          1          8    ZERO                 
+            bin <auto[4:5],*,auto[3]>                       0          1          8    ZERO                 
+            bin <auto[2:3],*,auto[3]>                       0          1          8    ZERO                 
+            bin <auto[10:11],*,auto[2]>                     0          1          8    ZERO                 
+            bin <auto[8:9],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[4:5],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[2:3],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[0:1],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[14:15],*,auto[1]>                     0          1          8    ZERO                 
+            bin <auto[6:7],*,auto[1]>                       0          1          8    ZERO                 
+            bin <auto[4:5],*,auto[1]>                       0          1          8    ZERO                 
+            bin <auto[0:1],*,auto[1]>                       0          1          8    ZERO                 
+            bin <auto[14:15],*,auto[0]>                     0          1          8    ZERO                 
+            bin <auto[8:9],*,auto[0]>                       0          1          8    ZERO                 
+            bin <auto[6:7],*,auto[0]>                       0          1          8    ZERO                 
+            bin <auto[2:3],*,auto[0]>                       0          1          8    ZERO                 
+            bin <auto[0:1],*,auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[12:13],auto[3]>                     0          1          8    ZERO                 
+            bin <*,auto[10:11],auto[3]>                     0          1          8    ZERO                 
+            bin <*,auto[8:9],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[6:7],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[2:3],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[0:1],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[14:15],auto[2]>                     0          1          8    ZERO                 
+            bin <*,auto[12:13],auto[2]>                     0          1          8    ZERO                 
+            bin <*,auto[8:9],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[6:7],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[4:5],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[2:3],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[14:15],auto[1]>                     0          1          8    ZERO                 
+            bin <*,auto[10:11],auto[1]>                     0          1          8    ZERO                 
+            bin <*,auto[8:9],auto[1]>                       0          1          8    ZERO                 
+            bin <*,auto[4:5],auto[1]>                       0          1          8    ZERO                 
+            bin <*,auto[0:1],auto[1]>                       0          1          8    ZERO                 
+            bin <*,auto[14:15],auto[0]>                     0          1          8    ZERO                 
+            bin <*,auto[10:11],auto[0]>                     0          1          8    ZERO                 
+            bin <*,auto[6:7],auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[4:5],auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[2:3],auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[0:1],auto[0]>                       0          1          8    ZERO                 
+            bin <auto[10:11],auto[12:13],auto[0]>           0          1          1    ZERO                 
+ Covergroup instance \/alu_tb_pkg::alu_coverage::alu_cg  
+                                                       72.75%        100          -    Uncovered            
+    covered/total bins:                                    28        276          -                      
+    missing/total bins:                                   248        276          -                      
+    % Hit:                                             10.14%        100          -                      
+    Coverpoint cp_a                                    87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        bin auto[0:1]                                       2          1          -    Covered              
+        bin auto[2:3]                                       2          1          -    Covered              
+        bin auto[4:5]                                       2          1          -    Covered              
+        bin auto[6:7]                                      10          1          -    Covered              
+        bin auto[8:9]                                       3          1          -    Covered              
+        bin auto[10:11]                                     6          1          -    Covered              
+        bin auto[12:13]                                     0          1          -    ZERO                 
+        bin auto[14:15]                                     2          1          -    Covered              
+    Coverpoint cp_b                                   100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0:1]                                       2          1          -    Covered              
+        bin auto[2:3]                                       2          1          -    Covered              
+        bin auto[4:5]                                       2          1          -    Covered              
+        bin auto[6:7]                                       1          1          -    Covered              
+        bin auto[8:9]                                       2          1          -    Covered              
+        bin auto[10:11]                                    10          1          -    Covered              
+        bin auto[12:13]                                     6          1          -    Covered              
+        bin auto[14:15]                                     2          1          -    Covered              
+    Coverpoint cp_op                                  100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                         4          1          -    Covered              
+        bin auto[1]                                         7          1          -    Covered              
+        bin auto[2]                                        12          1          -    Covered              
+        bin auto[3]                                         4          1          -    Covered              
+    Cross cross_all                                     3.51%        100          -    Uncovered            
+        covered/total bins:                                 9        256          -                      
+        missing/total bins:                               247        256          -                      
+        % Hit:                                          3.51%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[0:1],auto[14:15],auto[3]>             2          1          -    Covered              
+            bin <auto[8:9],auto[4:5],auto[3]>               2          1          -    Covered              
+            bin <auto[6:7],auto[10:11],auto[2]>            10          1          -    Covered              
+            bin <auto[14:15],auto[0:1],auto[2]>             2          1          -    Covered              
+            bin <auto[10:11],auto[12:13],auto[1]>           4          1          -    Covered              
+            bin <auto[8:9],auto[6:7],auto[1]>               1          1          -    Covered              
+            bin <auto[2:3],auto[2:3],auto[1]>               2          1          -    Covered              
+            bin <auto[4:5],auto[12:13],auto[0]>             2          1          -    Covered              
+            bin <auto[10:11],auto[8:9],auto[0]>             2          1          -    Covered              
+            bin <auto[12:13],*,*>                           0          1         32    ZERO                 
+            bin <auto[14:15],auto[14:15],*>                 0          1          4    ZERO                 
+            bin <auto[10:11],auto[14:15],*>                 0          1          4    ZERO                 
+            bin <auto[8:9],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[4:5],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[2:3],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[14:15],auto[12:13],*>                 0          1          4    ZERO                 
+            bin <auto[8:9],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[2:3],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[0:1],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[14:15],auto[10:11],*>                 0          1          4    ZERO                 
+            bin <auto[10:11],auto[10:11],*>                 0          1          4    ZERO                 
+            bin <auto[8:9],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[4:5],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[2:3],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[0:1],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[14:15],auto[8:9],*>                   0          1          4    ZERO                 
+            bin <auto[8:9],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[6:7],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],auto[6:7],*>                   0          1          4    ZERO                 
+            bin <auto[10:11],auto[6:7],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],auto[4:5],*>                   0          1          4    ZERO                 
+            bin <auto[10:11],auto[4:5],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],auto[2:3],*>                   0          1          4    ZERO                 
+            bin <auto[10:11],auto[2:3],*>                   0          1          4    ZERO                 
+            bin <auto[8:9],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[6:7],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[10:11],auto[0:1],*>                   0          1          4    ZERO                 
+            bin <auto[8:9],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[6:7],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],*,auto[3]>                     0          1          8    ZERO                 
+            bin <auto[10:11],*,auto[3]>                     0          1          8    ZERO                 
+            bin <auto[6:7],*,auto[3]>                       0          1          8    ZERO                 
+            bin <auto[4:5],*,auto[3]>                       0          1          8    ZERO                 
+            bin <auto[2:3],*,auto[3]>                       0          1          8    ZERO                 
+            bin <auto[10:11],*,auto[2]>                     0          1          8    ZERO                 
+            bin <auto[8:9],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[4:5],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[2:3],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[0:1],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[14:15],*,auto[1]>                     0          1          8    ZERO                 
+            bin <auto[6:7],*,auto[1]>                       0          1          8    ZERO                 
+            bin <auto[4:5],*,auto[1]>                       0          1          8    ZERO                 
+            bin <auto[0:1],*,auto[1]>                       0          1          8    ZERO                 
+            bin <auto[14:15],*,auto[0]>                     0          1          8    ZERO                 
+            bin <auto[8:9],*,auto[0]>                       0          1          8    ZERO                 
+            bin <auto[6:7],*,auto[0]>                       0          1          8    ZERO                 
+            bin <auto[2:3],*,auto[0]>                       0          1          8    ZERO                 
+            bin <auto[0:1],*,auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[12:13],auto[3]>                     0          1          8    ZERO                 
+            bin <*,auto[10:11],auto[3]>                     0          1          8    ZERO                 
+            bin <*,auto[8:9],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[6:7],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[2:3],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[0:1],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[14:15],auto[2]>                     0          1          8    ZERO                 
+            bin <*,auto[12:13],auto[2]>                     0          1          8    ZERO                 
+            bin <*,auto[8:9],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[6:7],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[4:5],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[2:3],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[14:15],auto[1]>                     0          1          8    ZERO                 
+            bin <*,auto[10:11],auto[1]>                     0          1          8    ZERO                 
+            bin <*,auto[8:9],auto[1]>                       0          1          8    ZERO                 
+            bin <*,auto[4:5],auto[1]>                       0          1          8    ZERO                 
+            bin <*,auto[0:1],auto[1]>                       0          1          8    ZERO                 
+            bin <*,auto[14:15],auto[0]>                     0          1          8    ZERO                 
+            bin <*,auto[10:11],auto[0]>                     0          1          8    ZERO                 
+            bin <*,auto[6:7],auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[4:5],auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[2:3],auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[0:1],auto[0]>                       0          1          8    ZERO                 
+            bin <auto[10:11],auto[12:13],auto[0]>           0          1          1    ZERO                 
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                     149       106        43    71.14%
+
+================================Statement Details================================
+
+Statement Coverage for instance /alu_tb_pkg --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File alu_seq_item.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                    ***0***     
+    7               4                    ***0***     
+    7               5                    ***0***     
+    7               6                         10     
+    7               7                    ***0***     
+    7               8                    ***0***     
+    7               9                    ***0***     
+    7              10                    ***0***     
+    15              1                         37     
+    19              1                         10     
+  File alu_sequence.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                    ***0***     
+    7               4                    ***0***     
+    7               5                    ***0***     
+    7               6                         23     
+    7               7                    ***0***     
+    7               8                    ***0***     
+    7               9                    ***0***     
+    7              10                    ***0***     
+    10              1                          1     
+    15              1                          1     
+    17              1                         10     
+    18              1                         10     
+    19              1                         10     
+    21              1                    ***0***     
+    22              1                         10     
+    23              1                         10     
+  File alu_sequencer.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                    ***0***     
+    10              1                          1     
+  File alu_driver.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                         20     
+    12              1                          1     
+    16              1                          1     
+    18              1                    ***0***     
+    23              1                          1     
+    24              1                         11     
+    26              1                         10     
+    27              1                         10     
+    28              1                         10     
+    29              1                         10     
+    31              1                         10     
+    35              1                         10     
+    36              1                         10     
+  File alu_monitor.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                         54     
+    13              1                          1     
+    17              1                          1     
+    18              1                          1     
+    22              1                          1     
+    24              1                    ***0***     
+    31              1                          1     
+    33              1                          1     
+    34              1                         31     
+    37              1                          2     
+    42              1                         27     
+    43              1                         27     
+    44              1                         27     
+    45              1                         27     
+    46              1                         27     
+    47              1                         27     
+    49              1                         27     
+    56              1                         28     
+    57              1                         28     
+    58              1                         28     
+    59              1                         28     
+  File alu_coverage.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                    ***0***     
+    25              1                          1     
+    26              1                          1     
+    30              1                          1     
+    31              1                          1     
+    32              1                          1     
+    36              1                          1     
+    37              1                          1     
+    41              1                          1     
+    42              1                         28     
+    43              1                         27     
+  File alu_scoreboard.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                         58     
+    16              1                          1     
+    17              1                          1     
+    18              1                          1     
+    22              1                          1     
+    23              1                          1     
+    24              1                          1     
+    25              1                          1     
+    29              1                          1     
+    30              1                          1     
+    37              1                          1     
+    38              1                         28     
+    42              1                          4     
+    43              1                          7     
+    44              1                         12     
+    45              1                          4     
+    46              1                    ***0***     
+    50              1                          1     
+    53              1                          1     
+    56              1                         26     
+    60              1                         26     
+    66              1                          1     
+    67              1                          1     
+    68              1                          1     
+    69              1                    ***0***     
+    70              1                          1     
+  File alu_agent.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                    ***0***     
+    15              1                          1     
+    19              1                          1     
+    23              1                    ***0***     
+    25              1                          1     
+    28              1                          1     
+    29              1                          1     
+    34              1                          1     
+    36              1                          1     
+    39              1                          1     
+    40              1                          1     
+  File alu_env.sv
+    8               1                    ***0***     
+    8               2                    ***0***     
+    8               3                          2     
+    15              1                          1     
+    19              1                          1     
+    20              1                          1     
+    21              1                          1     
+    22              1                          1     
+    23              1                          1     
+    27              1                          1     
+    28              1                          1     
+    29              1                          1     
+  File alu_test.sv
+    7               1                    ***0***     
+    7               2                    ***0***     
+    7               3                          1     
+    13              1                          1     
+    17              1                          1     
+    18              1                          1     
+    19              1                          1     
+    23              1                          1     
+    24              1                          1     
+    25              1                          1     
+    26              1                          1     
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /alu_tb_pkg/alu_coverage/alu_cg                  72.75%        100          -    Uncovered            
+    covered/total bins:                                    28        276          -                      
+    missing/total bins:                                   248        276          -                      
+    % Hit:                                             10.14%        100          -                      
+    Coverpoint cp_a                                    87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        bin auto[0:1]                                       2          1          -    Covered              
+        bin auto[2:3]                                       2          1          -    Covered              
+        bin auto[4:5]                                       2          1          -    Covered              
+        bin auto[6:7]                                      10          1          -    Covered              
+        bin auto[8:9]                                       3          1          -    Covered              
+        bin auto[10:11]                                     6          1          -    Covered              
+        bin auto[12:13]                                     0          1          -    ZERO                 
+        bin auto[14:15]                                     2          1          -    Covered              
+    Coverpoint cp_b                                   100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0:1]                                       2          1          -    Covered              
+        bin auto[2:3]                                       2          1          -    Covered              
+        bin auto[4:5]                                       2          1          -    Covered              
+        bin auto[6:7]                                       1          1          -    Covered              
+        bin auto[8:9]                                       2          1          -    Covered              
+        bin auto[10:11]                                    10          1          -    Covered              
+        bin auto[12:13]                                     6          1          -    Covered              
+        bin auto[14:15]                                     2          1          -    Covered              
+    Coverpoint cp_op                                  100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                         4          1          -    Covered              
+        bin auto[1]                                         7          1          -    Covered              
+        bin auto[2]                                        12          1          -    Covered              
+        bin auto[3]                                         4          1          -    Covered              
+    Cross cross_all                                     3.51%        100          -    Uncovered            
+        covered/total bins:                                 9        256          -                      
+        missing/total bins:                               247        256          -                      
+        % Hit:                                          3.51%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[0:1],auto[14:15],auto[3]>             2          1          -    Covered              
+            bin <auto[8:9],auto[4:5],auto[3]>               2          1          -    Covered              
+            bin <auto[6:7],auto[10:11],auto[2]>            10          1          -    Covered              
+            bin <auto[14:15],auto[0:1],auto[2]>             2          1          -    Covered              
+            bin <auto[10:11],auto[12:13],auto[1]>           4          1          -    Covered              
+            bin <auto[8:9],auto[6:7],auto[1]>               1          1          -    Covered              
+            bin <auto[2:3],auto[2:3],auto[1]>               2          1          -    Covered              
+            bin <auto[4:5],auto[12:13],auto[0]>             2          1          -    Covered              
+            bin <auto[10:11],auto[8:9],auto[0]>             2          1          -    Covered              
+            bin <auto[12:13],*,*>                           0          1         32    ZERO                 
+            bin <auto[14:15],auto[14:15],*>                 0          1          4    ZERO                 
+            bin <auto[10:11],auto[14:15],*>                 0          1          4    ZERO                 
+            bin <auto[8:9],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[4:5],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[2:3],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[14:15],auto[12:13],*>                 0          1          4    ZERO                 
+            bin <auto[8:9],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[2:3],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[0:1],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[14:15],auto[10:11],*>                 0          1          4    ZERO                 
+            bin <auto[10:11],auto[10:11],*>                 0          1          4    ZERO                 
+            bin <auto[8:9],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[4:5],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[2:3],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[0:1],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[14:15],auto[8:9],*>                   0          1          4    ZERO                 
+            bin <auto[8:9],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[6:7],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],auto[6:7],*>                   0          1          4    ZERO                 
+            bin <auto[10:11],auto[6:7],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],auto[4:5],*>                   0          1          4    ZERO                 
+            bin <auto[10:11],auto[4:5],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],auto[2:3],*>                   0          1          4    ZERO                 
+            bin <auto[10:11],auto[2:3],*>                   0          1          4    ZERO                 
+            bin <auto[8:9],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[6:7],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[10:11],auto[0:1],*>                   0          1          4    ZERO                 
+            bin <auto[8:9],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[6:7],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],*,auto[3]>                     0          1          8    ZERO                 
+            bin <auto[10:11],*,auto[3]>                     0          1          8    ZERO                 
+            bin <auto[6:7],*,auto[3]>                       0          1          8    ZERO                 
+            bin <auto[4:5],*,auto[3]>                       0          1          8    ZERO                 
+            bin <auto[2:3],*,auto[3]>                       0          1          8    ZERO                 
+            bin <auto[10:11],*,auto[2]>                     0          1          8    ZERO                 
+            bin <auto[8:9],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[4:5],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[2:3],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[0:1],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[14:15],*,auto[1]>                     0          1          8    ZERO                 
+            bin <auto[6:7],*,auto[1]>                       0          1          8    ZERO                 
+            bin <auto[4:5],*,auto[1]>                       0          1          8    ZERO                 
+            bin <auto[0:1],*,auto[1]>                       0          1          8    ZERO                 
+            bin <auto[14:15],*,auto[0]>                     0          1          8    ZERO                 
+            bin <auto[8:9],*,auto[0]>                       0          1          8    ZERO                 
+            bin <auto[6:7],*,auto[0]>                       0          1          8    ZERO                 
+            bin <auto[2:3],*,auto[0]>                       0          1          8    ZERO                 
+            bin <auto[0:1],*,auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[12:13],auto[3]>                     0          1          8    ZERO                 
+            bin <*,auto[10:11],auto[3]>                     0          1          8    ZERO                 
+            bin <*,auto[8:9],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[6:7],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[2:3],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[0:1],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[14:15],auto[2]>                     0          1          8    ZERO                 
+            bin <*,auto[12:13],auto[2]>                     0          1          8    ZERO                 
+            bin <*,auto[8:9],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[6:7],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[4:5],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[2:3],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[14:15],auto[1]>                     0          1          8    ZERO                 
+            bin <*,auto[10:11],auto[1]>                     0          1          8    ZERO                 
+            bin <*,auto[8:9],auto[1]>                       0          1          8    ZERO                 
+            bin <*,auto[4:5],auto[1]>                       0          1          8    ZERO                 
+            bin <*,auto[0:1],auto[1]>                       0          1          8    ZERO                 
+            bin <*,auto[14:15],auto[0]>                     0          1          8    ZERO                 
+            bin <*,auto[10:11],auto[0]>                     0          1          8    ZERO                 
+            bin <*,auto[6:7],auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[4:5],auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[2:3],auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[0:1],auto[0]>                       0          1          8    ZERO                 
+            bin <auto[10:11],auto[12:13],auto[0]>           0          1          1    ZERO                 
+ Covergroup instance \/alu_tb_pkg::alu_coverage::alu_cg  
+                                                       72.75%        100          -    Uncovered            
+    covered/total bins:                                    28        276          -                      
+    missing/total bins:                                   248        276          -                      
+    % Hit:                                             10.14%        100          -                      
+    Coverpoint cp_a                                    87.50%        100          -    Uncovered            
+        covered/total bins:                                 7          8          -                      
+        missing/total bins:                                 1          8          -                      
+        % Hit:                                         87.50%        100          -                      
+        bin auto[0:1]                                       2          1          -    Covered              
+        bin auto[2:3]                                       2          1          -    Covered              
+        bin auto[4:5]                                       2          1          -    Covered              
+        bin auto[6:7]                                      10          1          -    Covered              
+        bin auto[8:9]                                       3          1          -    Covered              
+        bin auto[10:11]                                     6          1          -    Covered              
+        bin auto[12:13]                                     0          1          -    ZERO                 
+        bin auto[14:15]                                     2          1          -    Covered              
+    Coverpoint cp_b                                   100.00%        100          -    Covered              
+        covered/total bins:                                 8          8          -                      
+        missing/total bins:                                 0          8          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0:1]                                       2          1          -    Covered              
+        bin auto[2:3]                                       2          1          -    Covered              
+        bin auto[4:5]                                       2          1          -    Covered              
+        bin auto[6:7]                                       1          1          -    Covered              
+        bin auto[8:9]                                       2          1          -    Covered              
+        bin auto[10:11]                                    10          1          -    Covered              
+        bin auto[12:13]                                     6          1          -    Covered              
+        bin auto[14:15]                                     2          1          -    Covered              
+    Coverpoint cp_op                                  100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin auto[0]                                         4          1          -    Covered              
+        bin auto[1]                                         7          1          -    Covered              
+        bin auto[2]                                        12          1          -    Covered              
+        bin auto[3]                                         4          1          -    Covered              
+    Cross cross_all                                     3.51%        100          -    Uncovered            
+        covered/total bins:                                 9        256          -                      
+        missing/total bins:                               247        256          -                      
+        % Hit:                                          3.51%        100          -                      
+        Auto, Default and User Defined Bins:
+            bin <auto[0:1],auto[14:15],auto[3]>             2          1          -    Covered              
+            bin <auto[8:9],auto[4:5],auto[3]>               2          1          -    Covered              
+            bin <auto[6:7],auto[10:11],auto[2]>            10          1          -    Covered              
+            bin <auto[14:15],auto[0:1],auto[2]>             2          1          -    Covered              
+            bin <auto[10:11],auto[12:13],auto[1]>           4          1          -    Covered              
+            bin <auto[8:9],auto[6:7],auto[1]>               1          1          -    Covered              
+            bin <auto[2:3],auto[2:3],auto[1]>               2          1          -    Covered              
+            bin <auto[4:5],auto[12:13],auto[0]>             2          1          -    Covered              
+            bin <auto[10:11],auto[8:9],auto[0]>             2          1          -    Covered              
+            bin <auto[12:13],*,*>                           0          1         32    ZERO                 
+            bin <auto[14:15],auto[14:15],*>                 0          1          4    ZERO                 
+            bin <auto[10:11],auto[14:15],*>                 0          1          4    ZERO                 
+            bin <auto[8:9],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[4:5],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[2:3],auto[14:15],*>                   0          1          4    ZERO                 
+            bin <auto[14:15],auto[12:13],*>                 0          1          4    ZERO                 
+            bin <auto[8:9],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[2:3],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[0:1],auto[12:13],*>                   0          1          4    ZERO                 
+            bin <auto[14:15],auto[10:11],*>                 0          1          4    ZERO                 
+            bin <auto[10:11],auto[10:11],*>                 0          1          4    ZERO                 
+            bin <auto[8:9],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[4:5],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[2:3],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[0:1],auto[10:11],*>                   0          1          4    ZERO                 
+            bin <auto[14:15],auto[8:9],*>                   0          1          4    ZERO                 
+            bin <auto[8:9],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[6:7],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[8:9],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],auto[6:7],*>                   0          1          4    ZERO                 
+            bin <auto[10:11],auto[6:7],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[6:7],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],auto[4:5],*>                   0          1          4    ZERO                 
+            bin <auto[10:11],auto[4:5],*>                   0          1          4    ZERO                 
+            bin <auto[6:7],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[4:5],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],auto[2:3],*>                   0          1          4    ZERO                 
+            bin <auto[10:11],auto[2:3],*>                   0          1          4    ZERO                 
+            bin <auto[8:9],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[6:7],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[2:3],*>                     0          1          4    ZERO                 
+            bin <auto[10:11],auto[0:1],*>                   0          1          4    ZERO                 
+            bin <auto[8:9],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[6:7],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[4:5],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[2:3],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[0:1],auto[0:1],*>                     0          1          4    ZERO                 
+            bin <auto[14:15],*,auto[3]>                     0          1          8    ZERO                 
+            bin <auto[10:11],*,auto[3]>                     0          1          8    ZERO                 
+            bin <auto[6:7],*,auto[3]>                       0          1          8    ZERO                 
+            bin <auto[4:5],*,auto[3]>                       0          1          8    ZERO                 
+            bin <auto[2:3],*,auto[3]>                       0          1          8    ZERO                 
+            bin <auto[10:11],*,auto[2]>                     0          1          8    ZERO                 
+            bin <auto[8:9],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[4:5],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[2:3],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[0:1],*,auto[2]>                       0          1          8    ZERO                 
+            bin <auto[14:15],*,auto[1]>                     0          1          8    ZERO                 
+            bin <auto[6:7],*,auto[1]>                       0          1          8    ZERO                 
+            bin <auto[4:5],*,auto[1]>                       0          1          8    ZERO                 
+            bin <auto[0:1],*,auto[1]>                       0          1          8    ZERO                 
+            bin <auto[14:15],*,auto[0]>                     0          1          8    ZERO                 
+            bin <auto[8:9],*,auto[0]>                       0          1          8    ZERO                 
+            bin <auto[6:7],*,auto[0]>                       0          1          8    ZERO                 
+            bin <auto[2:3],*,auto[0]>                       0          1          8    ZERO                 
+            bin <auto[0:1],*,auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[12:13],auto[3]>                     0          1          8    ZERO                 
+            bin <*,auto[10:11],auto[3]>                     0          1          8    ZERO                 
+            bin <*,auto[8:9],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[6:7],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[2:3],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[0:1],auto[3]>                       0          1          8    ZERO                 
+            bin <*,auto[14:15],auto[2]>                     0          1          8    ZERO                 
+            bin <*,auto[12:13],auto[2]>                     0          1          8    ZERO                 
+            bin <*,auto[8:9],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[6:7],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[4:5],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[2:3],auto[2]>                       0          1          8    ZERO                 
+            bin <*,auto[14:15],auto[1]>                     0          1          8    ZERO                 
+            bin <*,auto[10:11],auto[1]>                     0          1          8    ZERO                 
+            bin <*,auto[8:9],auto[1]>                       0          1          8    ZERO                 
+            bin <*,auto[4:5],auto[1]>                       0          1          8    ZERO                 
+            bin <*,auto[0:1],auto[1]>                       0          1          8    ZERO                 
+            bin <*,auto[14:15],auto[0]>                     0          1          8    ZERO                 
+            bin <*,auto[10:11],auto[0]>                     0          1          8    ZERO                 
+            bin <*,auto[6:7],auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[4:5],auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[2:3],auto[0]>                       0          1          8    ZERO                 
+            bin <*,auto[0:1],auto[0]>                       0          1          8    ZERO                 
+            bin <auto[10:11],auto[12:13],auto[0]>           0          1          1    ZERO                 
+
+TOTAL COVERGROUP COVERAGE: 72.75%  COVERGROUP TYPES: 1
+
+Total Coverage By Instance (filtered view): 56.92%
+
